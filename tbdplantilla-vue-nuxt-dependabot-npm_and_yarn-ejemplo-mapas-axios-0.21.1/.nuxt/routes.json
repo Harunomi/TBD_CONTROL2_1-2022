@@ -1,0 +1,37 @@
+[
+  {
+    "name": "acerca-de",
+    "path": "/acerca-de",
+    "component": "C:\\\\Users\\\\jtoro\\\\Desktop\\\\todo\\\\U\\\\ramos\\\\TBD\\\\tbdplantilla-vue-nuxt-dependabot-npm_and_yarn-ejemplo-mapas-axios-0.21.1\\\\pages\\\\acerca-de.vue",
+    "chunkName": "pages/acerca-de",
+    "_name": "_1205f8f5"
+  },
+  {
+    "name": "lista",
+    "path": "/lista",
+    "component": "C:\\\\Users\\\\jtoro\\\\Desktop\\\\todo\\\\U\\\\ramos\\\\TBD\\\\tbdplantilla-vue-nuxt-dependabot-npm_and_yarn-ejemplo-mapas-axios-0.21.1\\\\pages\\\\lista.vue",
+    "chunkName": "pages/lista",
+    "_name": "_7da97417"
+  },
+  {
+    "name": "lista-componente",
+    "path": "/lista-componente",
+    "component": "C:\\\\Users\\\\jtoro\\\\Desktop\\\\todo\\\\U\\\\ramos\\\\TBD\\\\tbdplantilla-vue-nuxt-dependabot-npm_and_yarn-ejemplo-mapas-axios-0.21.1\\\\pages\\\\lista-componente.vue",
+    "chunkName": "pages/lista-componente",
+    "_name": "_e1206fa4"
+  },
+  {
+    "name": "nuevo",
+    "path": "/nuevo",
+    "component": "C:\\\\Users\\\\jtoro\\\\Desktop\\\\todo\\\\U\\\\ramos\\\\TBD\\\\tbdplantilla-vue-nuxt-dependabot-npm_and_yarn-ejemplo-mapas-axios-0.21.1\\\\pages\\\\nuevo.vue",
+    "chunkName": "pages/nuevo",
+    "_name": "_b74fad6a"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "C:\\\\Users\\\\jtoro\\\\Desktop\\\\todo\\\\U\\\\ramos\\\\TBD\\\\tbdplantilla-vue-nuxt-dependabot-npm_and_yarn-ejemplo-mapas-axios-0.21.1\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_d3200c34"
+  }
+]
