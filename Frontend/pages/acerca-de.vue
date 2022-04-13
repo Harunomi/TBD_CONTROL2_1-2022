@@ -1,8 +1,7 @@
 <template>
     <div class="container">
-        <h1>Acerca de</h1>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime temporibus corporis ut aperiam qui impedit provident eveniet. Aut, rem ullam ea esse accusamus libero, vero maxime dicta temporibus similique animi?
-        </p>
+        <h1><center>Este es el Control 2 de TBD</center> </h1>
+        <p><center> Grupo 1 - TBD - 2022</center></p>
+        
     </div>
 </template>

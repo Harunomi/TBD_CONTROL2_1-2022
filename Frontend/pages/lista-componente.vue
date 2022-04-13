@@ -1,38 +1,59 @@
 <template>
     <div class="container">
-    <h1>Todos los libros</h1>
-    <ul class="item-list">
-      <list-item v-for="(item, index) in items" :key="index" :item="item"></list-item>
-    </ul>
-    <div v-if="items.length==0" class="empty-list">
-      <em>No se han cargado los datos</em>
+        <h1>Eliminar Libro</h1>
+
+        <form @submit.prevent="handleSubmitForm">
+            <div class="form-item">
+                <label>id del libro a eliminar</label>
+                <input type="number" id="id" v-model="newBook.id" />
+            </div>
+            <div>
+                <button type="submit" class="main" v-on:click="eliminar()">Eliminar</button>
+            </div>
+        </form>
     </div>
-  </div>
 </template>
+
 <script>
-export default {
-    //Función que contiene los datos del componente
-    data(){
-        return{
-            //Lista de ítems a mostrar
-            items:[]
-        }
-    },
-    methods:{
-        //Función asíncrona para consultar los datos
-        getData: async function(){
-            try {
-                let response = await this.$axios.get('/books');
-                this.items  = response.data;
-                console.log(response)
-            } catch (error) {
-                console.log('error', error);
+    import axios from "axios";
+//falta lo importante para deletear XD
+    export default {
+        data() {
+            return {
+                message: "",
+                newBook: {
+                    id: ''
+                },
+            };
+        },
+        methods: {
+            eliminar(){
+                var deletear ={
+                    "id": this.newBook.id
+                };
+                axios.delete('localhost:8080/books/delete/${id}',{ deletear})
+                .then(dato => {
+                    connsole.log(datos);
+                });
             }
-        }
-    },
-    //Función que se ejecuta al cargar el componente
-    created:function(){
-        this.getData();
+        },
+        /*
+        //Función asíncrona para consultar los datos
+        ,
+            delBook: async function(){
+                try {
+                    let response = await this.$axios.get('/books/delete/{id}');
+                    this.items = response.data;
+                    console.log(response)
+                } catch (error) {
+                    console.log('error', error);
+                }
+            }
+       */
+        //Función que se ejecuta al cargar el componente
+       /*
+        created: function () {
+            this.handleSubmitForm();
+        }*/
     }
-}
 </script>
