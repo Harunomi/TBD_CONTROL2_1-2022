@@ -12,8 +12,8 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_4617b9ac from 'nuxt_plugin_plugin_4617b9ac' // Source: .\\components\\plugin.js (mode: 'all')
-import nuxt_plugin_axios_02374fcf from 'nuxt_plugin_axios_02374fcf' // Source: .\\axios.js (mode: 'all')
+import nuxt_plugin_plugin_177e619e from 'nuxt_plugin_plugin_177e619e' // Source: .\\components\\plugin.js (mode: 'all')
+import nuxt_plugin_axios_614e7658 from 'nuxt_plugin_axios_614e7658' // Source: .\\axios.js (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -177,12 +177,12 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_plugin_4617b9ac === 'function') {
-    await nuxt_plugin_plugin_4617b9ac(app.context, inject)
+  if (typeof nuxt_plugin_plugin_177e619e === 'function') {
+    await nuxt_plugin_plugin_177e619e(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_axios_02374fcf === 'function') {
-    await nuxt_plugin_axios_02374fcf(app.context, inject)
+  if (typeof nuxt_plugin_axios_614e7658 === 'function') {
+    await nuxt_plugin_axios_614e7658(app.context, inject)
   }
 
   // Lock enablePreview in context
@@ -194,7 +194,14 @@ async function createApp(ssrContext, config = {}) {
 
   // Wait for async component to be resolved first
   await new Promise((resolve, reject) => {
-    router.push(app.context.route.fullPath, resolve, (err) => {
+    // Ignore 404s rather than blindly replacing URL in browser
+    if (process.client) {
+      const { route } = router.resolve(app.context.route.fullPath)
+      if (!route.matched.length) {
+        return resolve()
+      }
+    }
+    router.replace(app.context.route.fullPath, resolve, (err) => {
       // https://github.com/vuejs/vue-router/blob/v3.4.3/src/util/errors.js
       if (!err._isRouter) return reject(err)
       if (err.type !== 2 /* NavigationFailureType.redirected */) return resolve()

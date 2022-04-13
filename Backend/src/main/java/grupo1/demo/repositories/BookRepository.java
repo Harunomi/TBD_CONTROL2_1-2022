@@ -1,6 +1,7 @@
 package grupo1.demo.repositories;
 
 import grupo1.demo.models.Book;
+import java.util.*;
 
 public interface BookRepository {
     public int countBooks();
@@ -9,7 +10,7 @@ public interface BookRepository {
 
     public List<Book> getAllBooks();
 
-    public String updateBook(Long id, Book book);
+    //public String updateBook(Integer id, Book book);
 
-    public boolean deleteBook(Long id);
+    //public boolean deleteBook(Integer id);
 }

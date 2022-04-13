@@ -5,6 +5,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.sql2o.Connection;
 import org.sql2o.Sql2o;
+import java.util.*;
 
 @Repository
 
@@ -39,7 +40,7 @@ public class BookRepositoryImp implements BookRepository {
                     .addParameter("paginas", book.getPaginas())
                     .addParameter("precio", book.getPrecio())
                     .addParameter("volumen", book.getVolumen())
-                    .addParameter("softDelete", book.softDelete())
+                    .addParameter("softDelete", book.getSoftDelete())
                     .executeUpdate();
 
             book.setId(idBook);
@@ -65,8 +66,9 @@ public class BookRepositoryImp implements BookRepository {
         }
     }
 
+    /*
     @Override
-    public String updateBook(Long id, Book book) {
+    public String updateBook(Integer id, Book book) {
         String sql = "UPDATE Book" +
                 "SET titulo = :bookTitulo, " +
                 "autor = :bookAutor, " +
@@ -136,8 +138,9 @@ public class BookRepositoryImp implements BookRepository {
         }
     }
 
+    
     @Override
-    public boolean deleteBook(Long id) {
+    public boolean deleteBook(Integer id) {
         String sql = "UPDATE Book set softDelete = 1 where id = :id and softDelete = 0";
         try (Connection conn = sql2o.open()) {
             id = conn.createQuery(sql).addParameter("id", id).executeUpdate();
@@ -147,5 +150,6 @@ public class BookRepositoryImp implements BookRepository {
         }
         return true;
     }
-
+    
+    */
 }

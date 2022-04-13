@@ -2,36 +2,31 @@
   {
     "name": "acerca-de",
     "path": "/acerca-de",
-    "component": "C:\\\\Users\\\\Felipe\\\\Documents\\\\USACH\\\\TBD\\\\TBD_CONTROL2_1-2022\\\\tbdplantilla-vue-nuxt-dependabot-npm_and_yarn-ejemplo-mapas-axios-0.21.1\\\\pages\\\\acerca-de.vue",
-    "chunkName": "pages/acerca-de",
-    "_name": "_c17646f0"
+    "component": "C:\\\\Users\\\\pipel\\\\Documents\\\\TBD\\\\Control2\\\\nuevo\\\\TBD_CONTROL2_1-2022\\\\Frontend\\\\pages\\\\acerca-de.vue",
+    "chunkName": "pages/acerca-de"
   },
   {
     "name": "lista",
     "path": "/lista",
-    "component": "C:\\\\Users\\\\Felipe\\\\Documents\\\\USACH\\\\TBD\\\\TBD_CONTROL2_1-2022\\\\tbdplantilla-vue-nuxt-dependabot-npm_and_yarn-ejemplo-mapas-axios-0.21.1\\\\pages\\\\lista.vue",
-    "chunkName": "pages/lista",
-    "_name": "_f991cdac"
+    "component": "C:\\\\Users\\\\pipel\\\\Documents\\\\TBD\\\\Control2\\\\nuevo\\\\TBD_CONTROL2_1-2022\\\\Frontend\\\\pages\\\\lista.vue",
+    "chunkName": "pages/lista"
   },
   {
     "name": "lista-componente",
     "path": "/lista-componente",
-    "component": "C:\\\\Users\\\\Felipe\\\\Documents\\\\USACH\\\\TBD\\\\TBD_CONTROL2_1-2022\\\\tbdplantilla-vue-nuxt-dependabot-npm_and_yarn-ejemplo-mapas-axios-0.21.1\\\\pages\\\\lista-componente.vue",
-    "chunkName": "pages/lista-componente",
-    "_name": "_dcef6d8a"
+    "component": "C:\\\\Users\\\\pipel\\\\Documents\\\\TBD\\\\Control2\\\\nuevo\\\\TBD_CONTROL2_1-2022\\\\Frontend\\\\pages\\\\lista-componente.vue",
+    "chunkName": "pages/lista-componente"
   },
   {
     "name": "nuevo",
     "path": "/nuevo",
-    "component": "C:\\\\Users\\\\Felipe\\\\Documents\\\\USACH\\\\TBD\\\\TBD_CONTROL2_1-2022\\\\tbdplantilla-vue-nuxt-dependabot-npm_and_yarn-ejemplo-mapas-axios-0.21.1\\\\pages\\\\nuevo.vue",
-    "chunkName": "pages/nuevo",
-    "_name": "_ac346344"
+    "component": "C:\\\\Users\\\\pipel\\\\Documents\\\\TBD\\\\Control2\\\\nuevo\\\\TBD_CONTROL2_1-2022\\\\Frontend\\\\pages\\\\nuevo.vue",
+    "chunkName": "pages/nuevo"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Users\\\\Felipe\\\\Documents\\\\USACH\\\\TBD\\\\TBD_CONTROL2_1-2022\\\\tbdplantilla-vue-nuxt-dependabot-npm_and_yarn-ejemplo-mapas-axios-0.21.1\\\\pages\\\\index.vue",
-    "chunkName": "pages/index",
-    "_name": "_c804c20e"
+    "component": "C:\\\\Users\\\\pipel\\\\Documents\\\\TBD\\\\Control2\\\\nuevo\\\\TBD_CONTROL2_1-2022\\\\Frontend\\\\pages\\\\index.vue",
+    "chunkName": "pages/index"
   }
 ]

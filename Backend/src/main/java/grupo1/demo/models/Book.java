@@ -1,20 +1,22 @@
 package grupo1.demo.models;
 
 import com.fasterxml.jackson.databind.deser.std.StringArrayDeserializer;
-
 import org.springframework.boot.autoconfigure.domain.EntityScan;
+import java.util.*;
 
 @EntityScan
 public class Book {
-    private Long id;
+    private Integer id;
     private String titulo;
     private String autor;
     private String editorial;
     private Integer paginas;
     private Integer precio;
     private Integer volumen;
-    private Integer softDelete;// 1 significa borrado xd
+    private Integer softDelete;
 
+    
+    // 1 significa borrado xd
     /*
      * public Book() {
      * 
@@ -35,8 +37,12 @@ public class Book {
      */
 
     // getters y setters de la wea de libro
-    public Long getId() {
+    public Integer getId() {
         return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getTitulo() {
@@ -85,6 +91,14 @@ public class Book {
 
     public void setVolumen(Integer volumen) {
         this.volumen = volumen;
+    }
+
+    public Integer getSoftDelete() {
+        return this.softDelete;
+    }
+
+    public void setSoftDelete(Integer softDelete) {
+        this.softDelete = softDelete;
     }
 
 }
