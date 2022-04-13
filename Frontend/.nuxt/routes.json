@@ -2,36 +2,36 @@
   {
     "name": "acerca-de",
     "path": "/acerca-de",
-    "component": "C:\\\\Users\\\\jtoro\\\\Desktop\\\\todo\\\\U\\\\ramos\\\\TBD\\\\ak\\\\TBD_CONTROL2_1-2022\\\\Frontend\\\\pages\\\\acerca-de.vue",
+    "component": "C:\\\\Users\\\\pipel\\\\Documents\\\\TBD\\\\Control2\\\\nuevo\\\\TBD_CONTROL2_1-2022\\\\Frontend\\\\pages\\\\acerca-de.vue",
     "chunkName": "pages/acerca-de",
-    "_name": "_46aac52a"
+    "_name": "_2939683e"
   },
   {
     "name": "lista",
     "path": "/lista",
-    "component": "C:\\\\Users\\\\jtoro\\\\Desktop\\\\todo\\\\U\\\\ramos\\\\TBD\\\\ak\\\\TBD_CONTROL2_1-2022\\\\Frontend\\\\pages\\\\lista.vue",
+    "component": "C:\\\\Users\\\\pipel\\\\Documents\\\\TBD\\\\Control2\\\\nuevo\\\\TBD_CONTROL2_1-2022\\\\Frontend\\\\pages\\\\lista.vue",
     "chunkName": "pages/lista",
-    "_name": "_bac2ba68"
+    "_name": "_7c1d1d03"
   },
   {
     "name": "lista-componente",
     "path": "/lista-componente",
-    "component": "C:\\\\Users\\\\jtoro\\\\Desktop\\\\todo\\\\U\\\\ramos\\\\TBD\\\\ak\\\\TBD_CONTROL2_1-2022\\\\Frontend\\\\pages\\\\lista-componente.vue",
+    "component": "C:\\\\Users\\\\pipel\\\\Documents\\\\TBD\\\\Control2\\\\nuevo\\\\TBD_CONTROL2_1-2022\\\\Frontend\\\\pages\\\\lista-componente.vue",
     "chunkName": "pages/lista-componente",
-    "_name": "_e8a8734e"
+    "_name": "_7130d87c"
   },
   {
     "name": "nuevo",
     "path": "/nuevo",
-    "component": "C:\\\\Users\\\\jtoro\\\\Desktop\\\\todo\\\\U\\\\ramos\\\\TBD\\\\ak\\\\TBD_CONTROL2_1-2022\\\\Frontend\\\\pages\\\\nuevo.vue",
+    "component": "C:\\\\Users\\\\pipel\\\\Documents\\\\TBD\\\\Control2\\\\nuevo\\\\TBD_CONTROL2_1-2022\\\\Frontend\\\\pages\\\\nuevo.vue",
     "chunkName": "pages/nuevo",
-    "_name": "_6d655000"
+    "_name": "_ba685b92"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Users\\\\jtoro\\\\Desktop\\\\todo\\\\U\\\\ramos\\\\TBD\\\\ak\\\\TBD_CONTROL2_1-2022\\\\Frontend\\\\pages\\\\index.vue",
+    "component": "C:\\\\Users\\\\pipel\\\\Documents\\\\TBD\\\\Control2\\\\nuevo\\\\TBD_CONTROL2_1-2022\\\\Frontend\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
-    "_name": "_8935aeca"
+    "_name": "_d638ba5c"
   }
 ]

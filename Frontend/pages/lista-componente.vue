@@ -1,17 +1,18 @@
 <template>
-    <div class="container">
-        <h1>Eliminar Libro</h1>
+  <div class="container">
+    <h1>Eliminar Libro</h1>
 
-        <form @submit.prevent="handleSubmitForm">
-            <div class="form-item">
-                <label>id del libro a eliminar</label>
-                <input type="number" id="id" v-model="newBook.id" />
-            </div>
-            <div>
-                <button type="submit" class="main" v-on:click="eliminar()">Eliminar</button>
-            </div>
-        </form>
-    </div>
+    <form @submit.prevent="handleSubmitForm">
+      <div class="form-item">
+        <label>id del libro a eliminar</label>
+        <input type="number" id="id" v-model="newBook.id" />
+      </div>
+      <div>
+        <button @click.prevent="deleteBook(newBook.id)" class="btn btn-danger ">Borrar</button>
+        </button>
+      </div>
+    </form>
+  </div>
 </template>
 
 <script>
@@ -27,6 +28,18 @@
             };
         },
         methods: {
+
+            //BORRAR POR ID
+            deleteBook(id) {
+            console.log(id);
+            axios.delete("http://localhost:8080/books/delete/" + id).then(res => {
+            console.log(res);
+            
+            window.location.reload(true);
+                });
+            }  
+        
+            /*
             eliminar(){
                 var deletear ={
                     "id": this.newBook.id
@@ -37,7 +50,7 @@
                 });
             }
         },
-        /*
+        
         //Función asíncrona para consultar los datos
         ,
             delBook: async function(){
@@ -54,6 +67,8 @@
        /*
         created: function () {
             this.handleSubmitForm();
-        }*/
+
+            */
+        }
     }
 </script>

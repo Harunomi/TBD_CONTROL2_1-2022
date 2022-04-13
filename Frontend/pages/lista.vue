@@ -5,7 +5,7 @@
       <li v-for="(libro, index) in libros" :key="index">
         <!-- <img :src="'https://loremflickr.com/160/120/book?lock='+i"/>-->
         <!-- {{index}} -  -->
-        ID: {{ index }} - Titulo: {{ libro.titulo }}. Autor: {{ libro.autor }}.
+        ID: {{ libro.id }} - Titulo: {{ libro.titulo }}. Autor: {{ libro.autor }}.
         Editorial: {{ libro.editorial }}. Páginas: {{ libro.paginas }}. Precio:
         {{ libro.Precio }}. Volumen: {{ libro.volumen }}
       </li>
