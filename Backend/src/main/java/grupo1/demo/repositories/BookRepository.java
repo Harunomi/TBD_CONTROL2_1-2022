@@ -12,5 +12,5 @@ public interface BookRepository {
 
     //public String updateBook(Integer id, Book book);
 
-    //public boolean deleteBook(Integer id);
+    public boolean deleteBook(int id);
 }

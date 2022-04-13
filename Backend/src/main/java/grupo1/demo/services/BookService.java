@@ -43,19 +43,19 @@ public class BookService {
     public List<Book> getAllBooks() {
         return bookRepository.getAllBooks();
     }
-
-    /* Update
+/*
+    // Update
     @PutMapping("/books/update/{id}")
     @ResponseBody
     public String updateBook(@PathVariable int id, @RequestBody Book book) {
         return bookRepository.updateBook(id, book);
     }
-
+*/
     // Delete
     @DeleteMapping("/books/delete/{id}")
     @ResponseBody
-    public String deleteBook(@PathVariable int id) {
+    public boolean deleteBook(@PathVariable int id) {
         return bookRepository.deleteBook(id);
     }
-    */
+    
 }

@@ -2,31 +2,36 @@
   {
     "name": "acerca-de",
     "path": "/acerca-de",
-    "component": "C:\\\\Users\\\\pipel\\\\Documents\\\\TBD\\\\Control2\\\\nuevo\\\\TBD_CONTROL2_1-2022\\\\Frontend\\\\pages\\\\acerca-de.vue",
-    "chunkName": "pages/acerca-de"
+    "component": "C:\\\\Users\\\\jtoro\\\\Desktop\\\\todo\\\\U\\\\ramos\\\\TBD\\\\ak\\\\TBD_CONTROL2_1-2022\\\\Frontend\\\\pages\\\\acerca-de.vue",
+    "chunkName": "pages/acerca-de",
+    "_name": "_46aac52a"
   },
   {
     "name": "lista",
     "path": "/lista",
-    "component": "C:\\\\Users\\\\pipel\\\\Documents\\\\TBD\\\\Control2\\\\nuevo\\\\TBD_CONTROL2_1-2022\\\\Frontend\\\\pages\\\\lista.vue",
-    "chunkName": "pages/lista"
+    "component": "C:\\\\Users\\\\jtoro\\\\Desktop\\\\todo\\\\U\\\\ramos\\\\TBD\\\\ak\\\\TBD_CONTROL2_1-2022\\\\Frontend\\\\pages\\\\lista.vue",
+    "chunkName": "pages/lista",
+    "_name": "_bac2ba68"
   },
   {
     "name": "lista-componente",
     "path": "/lista-componente",
-    "component": "C:\\\\Users\\\\pipel\\\\Documents\\\\TBD\\\\Control2\\\\nuevo\\\\TBD_CONTROL2_1-2022\\\\Frontend\\\\pages\\\\lista-componente.vue",
-    "chunkName": "pages/lista-componente"
+    "component": "C:\\\\Users\\\\jtoro\\\\Desktop\\\\todo\\\\U\\\\ramos\\\\TBD\\\\ak\\\\TBD_CONTROL2_1-2022\\\\Frontend\\\\pages\\\\lista-componente.vue",
+    "chunkName": "pages/lista-componente",
+    "_name": "_e8a8734e"
   },
   {
     "name": "nuevo",
     "path": "/nuevo",
-    "component": "C:\\\\Users\\\\pipel\\\\Documents\\\\TBD\\\\Control2\\\\nuevo\\\\TBD_CONTROL2_1-2022\\\\Frontend\\\\pages\\\\nuevo.vue",
-    "chunkName": "pages/nuevo"
+    "component": "C:\\\\Users\\\\jtoro\\\\Desktop\\\\todo\\\\U\\\\ramos\\\\TBD\\\\ak\\\\TBD_CONTROL2_1-2022\\\\Frontend\\\\pages\\\\nuevo.vue",
+    "chunkName": "pages/nuevo",
+    "_name": "_6d655000"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Users\\\\pipel\\\\Documents\\\\TBD\\\\Control2\\\\nuevo\\\\TBD_CONTROL2_1-2022\\\\Frontend\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "component": "C:\\\\Users\\\\jtoro\\\\Desktop\\\\todo\\\\U\\\\ramos\\\\TBD\\\\ak\\\\TBD_CONTROL2_1-2022\\\\Frontend\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_8935aeca"
   }
 ]

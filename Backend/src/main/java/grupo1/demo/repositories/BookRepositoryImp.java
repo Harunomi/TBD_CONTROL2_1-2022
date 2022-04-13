@@ -31,7 +31,7 @@ public class BookRepositoryImp implements BookRepository {
             String sql = "INSERT INTO book(id, titulo, autor, editorial, paginas, precio, volumen, softDelete)" +
                     "VALUES(:id, :titulo, :autor, :editorial, :paginas, :precio, :volumen, :softDelete)";
             int idBook = countBooks() + 1;
-
+            int zero =0;
             conn.createQuery(sql)
                     .addParameter("id", idBook)
                     .addParameter("titulo", book.getTitulo())
@@ -40,7 +40,7 @@ public class BookRepositoryImp implements BookRepository {
                     .addParameter("paginas", book.getPaginas())
                     .addParameter("precio", book.getPrecio())
                     .addParameter("volumen", book.getVolumen())
-                    .addParameter("softDelete", book.getSoftDelete())
+                    .addParameter("softDelete", zero)
                     .executeUpdate();
 
             book.setId(idBook);
@@ -67,6 +67,7 @@ public class BookRepositoryImp implements BookRepository {
     }
 
     /*
+    
     @Override
     public String updateBook(Integer id, Book book) {
         String sql = "UPDATE Book" +
@@ -78,7 +79,7 @@ public class BookRepositoryImp implements BookRepository {
                 "volumen = :bookVolumen";
 
         try (Connection con = sql2o.open()) {
-            Book bookAntiguo = conn.createQuery("SELECT * FROM Book where id = :bookId")
+            Book bookAntiguo = con.createQuery("SELECT * FROM Book where id = :bookId")
                     .addParameter("bookId", id)
                     .executeAndFetchFirst(Book.class);
 
@@ -136,14 +137,14 @@ public class BookRepositoryImp implements BookRepository {
             System.out.println(e.getMessage());
             return null;
         }
-    }
+    }*/
 
     
     @Override
-    public boolean deleteBook(Integer id) {
-        String sql = "UPDATE Book set softDelete = 1 where id = :id and softDelete = 0";
+    public boolean deleteBook(int id) {
+        String sql = "DELETE FROM book WHERE id = :id";
         try (Connection conn = sql2o.open()) {
-            id = conn.createQuery(sql).addParameter("id", id).executeUpdate();
+           conn.createQuery(sql).addParameter("id", id).executeUpdate();
         } catch (Exception e) {
             System.out.println(e.getMessage());
             return false;
@@ -151,5 +152,5 @@ public class BookRepositoryImp implements BookRepository {
         return true;
     }
     
-    */
+    
 }
