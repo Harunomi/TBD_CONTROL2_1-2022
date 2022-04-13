@@ -1,16 +1,17 @@
 <template>
   <div class="wrapper">
     <header>
-      <nav><!-- Enlaces de navegación-->
+      <nav>
+        <!-- Enlaces de navegación-->
         <ul>
           <li>
-            <a href="/lista">Lista</a>
+            <a href="/lista">Listado Libros</a>
           </li>
           <li>
-            <a href="/nuevo">Nuevo</a>
+            <a href="/nuevo">Nuevo Libro</a>
           </li>
           <li>
-            <a href="/lista-componente">Lista Comp.</a>
+            <a href="/lista-componente">Eliminar Libro.</a>
           </li>
           <li>
             <a href="/acerca-de">Acerca de</a>
@@ -18,8 +19,9 @@
         </ul>
       </nav>
     </header>
-      <Nuxt /><!-- Contenidos de las páginas-->
-    <footer><!-- contenido del footer -->
+    <Nuxt /><!-- Contenidos de las páginas-->
+    <footer>
+      <!-- contenido del footer -->
       Ejemplo TBD
     </footer>
   </div>
@@ -27,15 +29,8 @@
 
 <style>
 html {
-  font-family:
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
