@@ -14,6 +14,9 @@
             <a href="/lista-componente">Eliminar Libro.</a>
           </li>
           <li>
+            <a href="/modificar">Modificar Libro</a>
+          </li>
+          <li>
             <a href="/acerca-de">Acerca de</a>
           </li>
         </ul>
