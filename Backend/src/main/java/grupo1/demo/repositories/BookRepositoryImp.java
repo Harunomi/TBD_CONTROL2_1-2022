@@ -26,7 +26,6 @@ public class BookRepositoryImp implements BookRepository {
 
     @Override
     public String createBook(Book book) {
-
         try (Connection conn = sql2o.open()) {
             String sql = "INSERT INTO book(id, titulo, autor, editorial, paginas, precio, volumen, softDelete)" +
                     "VALUES(:id, :titulo, :autor, :editorial, :paginas, :precio, :volumen, :softDelete)";
@@ -151,6 +150,35 @@ public class BookRepositoryImp implements BookRepository {
         }
         return true;
     }
+    @Override
+    public String updateBook(Book book) {
+        try (Connection conn = sql2o.open()) {
+            String sql = "INSERT INTO book(id, titulo, autor, editorial, paginas, precio, volumen, softDelete)" +
+                    "VALUES(:id, :titulo, :autor, :editorial, :paginas, :precio, :volumen, :softDelete)";
+            int zero =0;
+            conn.createQuery(sql)
+                    .addParameter("id", book.getId())
+                    .addParameter("titulo", book.getTitulo())
+                    .addParameter("autor", book.getAutor())
+                    .addParameter("editorial", book.getEditorial())
+                    .addParameter("paginas", book.getPaginas())
+                    .addParameter("precio", book.getPrecio())
+                    .addParameter("volumen", book.getVolumen())
+                    .addParameter("softDelete", zero)
+                    .executeUpdate();
+
+            book.setId(book.getId());
+
+            return "Se ha editado el libro ";
+
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            return null;
+        }
+
+    }
+
+    
     
     
 }

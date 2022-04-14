@@ -4,11 +4,12 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _2939683e = () => interopDefault(import('..\\pages\\acerca-de.vue' /* webpackChunkName: "pages/acerca-de" */))
-const _7c1d1d03 = () => interopDefault(import('..\\pages\\lista.vue' /* webpackChunkName: "pages/lista" */))
-const _7130d87c = () => interopDefault(import('..\\pages\\lista-componente.vue' /* webpackChunkName: "pages/lista-componente" */))
-const _ba685b92 = () => interopDefault(import('..\\pages\\nuevo.vue' /* webpackChunkName: "pages/nuevo" */))
-const _d638ba5c = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _0be03c74 = () => interopDefault(import('..\\pages\\acerca-de.vue' /* webpackChunkName: "pages/acerca-de" */))
+const _57f74f16 = () => interopDefault(import('..\\pages\\lista.vue' /* webpackChunkName: "pages/lista" */))
+const _23c967cf = () => interopDefault(import('..\\pages\\lista-componente.vue' /* webpackChunkName: "pages/lista-componente" */))
+const _ea430d06 = () => interopDefault(import('..\\pages\\modificar.vue' /* webpackChunkName: "pages/modificar" */))
+const _7ea6044a = () => interopDefault(import('..\\pages\\nuevo.vue' /* webpackChunkName: "pages/nuevo" */))
+const _70bdd4e5 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -23,23 +24,27 @@ export const routerOptions = {
 
   routes: [{
     path: "/acerca-de",
-    component: _2939683e,
+    component: _0be03c74,
     name: "acerca-de"
   }, {
     path: "/lista",
-    component: _7c1d1d03,
+    component: _57f74f16,
     name: "lista"
   }, {
     path: "/lista-componente",
-    component: _7130d87c,
+    component: _23c967cf,
     name: "lista-componente"
   }, {
+    path: "/modificar",
+    component: _ea430d06,
+    name: "modificar"
+  }, {
     path: "/nuevo",
-    component: _ba685b92,
+    component: _7ea6044a,
     name: "nuevo"
   }, {
     path: "/",
-    component: _d638ba5c,
+    component: _70bdd4e5,
     name: "index"
   }],
 

@@ -2,36 +2,43 @@
   {
     "name": "acerca-de",
     "path": "/acerca-de",
-    "component": "C:\\\\Users\\\\pipel\\\\Documents\\\\TBD\\\\Control2\\\\nuevo\\\\TBD_CONTROL2_1-2022\\\\Frontend\\\\pages\\\\acerca-de.vue",
+    "component": "C:\\\\Users\\\\Harunomi\\\\Desktop\\\\Programas Pencas\\\\TBD_CONTROL2_1-2022\\\\Frontend\\\\pages\\\\acerca-de.vue",
     "chunkName": "pages/acerca-de",
-    "_name": "_2939683e"
+    "_name": "_0be03c74"
   },
   {
     "name": "lista",
     "path": "/lista",
-    "component": "C:\\\\Users\\\\pipel\\\\Documents\\\\TBD\\\\Control2\\\\nuevo\\\\TBD_CONTROL2_1-2022\\\\Frontend\\\\pages\\\\lista.vue",
+    "component": "C:\\\\Users\\\\Harunomi\\\\Desktop\\\\Programas Pencas\\\\TBD_CONTROL2_1-2022\\\\Frontend\\\\pages\\\\lista.vue",
     "chunkName": "pages/lista",
-    "_name": "_7c1d1d03"
+    "_name": "_57f74f16"
   },
   {
     "name": "lista-componente",
     "path": "/lista-componente",
-    "component": "C:\\\\Users\\\\pipel\\\\Documents\\\\TBD\\\\Control2\\\\nuevo\\\\TBD_CONTROL2_1-2022\\\\Frontend\\\\pages\\\\lista-componente.vue",
+    "component": "C:\\\\Users\\\\Harunomi\\\\Desktop\\\\Programas Pencas\\\\TBD_CONTROL2_1-2022\\\\Frontend\\\\pages\\\\lista-componente.vue",
     "chunkName": "pages/lista-componente",
-    "_name": "_7130d87c"
+    "_name": "_23c967cf"
+  },
+  {
+    "name": "modificar",
+    "path": "/modificar",
+    "component": "C:\\\\Users\\\\Harunomi\\\\Desktop\\\\Programas Pencas\\\\TBD_CONTROL2_1-2022\\\\Frontend\\\\pages\\\\modificar.vue",
+    "chunkName": "pages/modificar",
+    "_name": "_ea430d06"
   },
   {
     "name": "nuevo",
     "path": "/nuevo",
-    "component": "C:\\\\Users\\\\pipel\\\\Documents\\\\TBD\\\\Control2\\\\nuevo\\\\TBD_CONTROL2_1-2022\\\\Frontend\\\\pages\\\\nuevo.vue",
+    "component": "C:\\\\Users\\\\Harunomi\\\\Desktop\\\\Programas Pencas\\\\TBD_CONTROL2_1-2022\\\\Frontend\\\\pages\\\\nuevo.vue",
     "chunkName": "pages/nuevo",
-    "_name": "_ba685b92"
+    "_name": "_7ea6044a"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Users\\\\pipel\\\\Documents\\\\TBD\\\\Control2\\\\nuevo\\\\TBD_CONTROL2_1-2022\\\\Frontend\\\\pages\\\\index.vue",
+    "component": "C:\\\\Users\\\\Harunomi\\\\Desktop\\\\Programas Pencas\\\\TBD_CONTROL2_1-2022\\\\Frontend\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
-    "_name": "_d638ba5c"
+    "_name": "_70bdd4e5"
   }
 ]

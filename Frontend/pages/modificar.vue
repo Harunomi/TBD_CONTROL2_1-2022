@@ -1,15 +1,39 @@
 <template>
-  <div>
+  <div class="container">
     <h1>Editar libro</h1>
-    <v-row align="center">
-      <v-col cols="12">
-        <v-select
-          :items="libros"
-          :menu-props="{ top: true, offsetY: true }"
-          label="Label"
-        ></v-select>
-      </v-col>
-    </v-row>
+    <form @submit.prevent="handleSubmitForm">
+      <div class="form-item">
+        <label>ID</label>
+        <input type="number" id="id" v-model="newBook.id" />
+      </div>
+      <div class="form-item">
+        <label>Titulo</label>
+        <input type="text" id="titulo" v-model="newBook.titulo" />
+      </div>
+      <div class="form-item">
+        <label>Autor</label>
+        <input type="text" id="autor" v-model="newBook.autor" />
+      </div>
+      <div class="form-item">
+        <label>Editorial</label>
+        <input type="text" id="editorial" v-model="newBook.editorial" />
+      </div>
+      <div class="form-item">
+        <label>Paginas</label>
+        <input type="number" id="paginas" v-model="newBook.paginas" />
+      </div>
+      <div class="form-item">
+        <label>Precio</label>
+        <input type="number" id="precio" v-model="newBook.precio" />
+      </div>
+      <div class="form-item">
+        <label>volumen</label>
+        <input type="number" id="volumen" v-model="newBook.volumen" />
+      </div>
+      <div>
+        <button @click.prevent="deleteBook(newBook.id)" type="submit" class="main">Modificar</button>
+      </div>
+    </form>
   </div>
 </template>
 
@@ -20,54 +44,49 @@ import axios from "axios";
 
 export default {
   data() {
-
     return {
-      libros = [], //Aqui se guardaran los libros de la base da datos para modificar
       message: "",
       newBook: {
-        titulo: '',
-        autor: '',
-        editorial: '',
-        paginas: '',
-        precio: '',
-        volumen: ''
+        id: "",
+        titulo: "",
+        autor: "",
+        editorial: "",
+        paginas: "",
+        precio: "",
+        volumen: "",
       },
     };
   },
   methods: {
-    //Función asíncrona para consultar los datos
-    getData: async function () {
-      try {
-        let response = await this.$axios.get("/books");
-        this.libros = response.data;
-        console.log(response);
-      } catch (error) {
-        console.log("error", error);
-      }
-    },
-    handleSubmitForm() {
-                let apiURL = 'http://localhost:8080/books/update/{id}';
-                axios.post(apiURL, {
-                    titulo : this.newBook.titulo,
-                    autor : this.newBook.autor,
-                    editorial : this.newBook.editorial,
-                    paginas : this.newBook.paginas,
-                    precio : this.newBook.precio,
-                    volumen : this.newBook.volumen
-                    }).then(res => {
-                    this.respuesta = res.data;
-                    alert(this.respuesta);
-        
-                }).catch(error => {
-                    alert(error)
-                    console.log(error)
+    deleteBook(id) {
+            console.log(id);
+            axios.delete("http://localhost:8080/books/delete/" + id).then(res => {
+            console.log(res);
                 });
-            },
+      let apiURL = "http://localhost:8080/books/updateBook";
+      axios.post(apiURL, {
+          id: this.newBook.id,
+          titulo: this.newBook.titulo,
+          autor: this.newBook.autor,
+          editorial: this.newBook.editorial,
+          paginas: this.newBook.paginas,
+          precio: this.newBook.precio,
+          volumen: this.newBook.volumen,
+        })
+        .then((res) => {
+          this.respuesta = res.data;
+          alert(this.respuesta);
+        })
+        .catch((error) => {
+          alert(error);
+          console.log(error);
+        });
+            }
   },
   //Función que se ejecuta al cargar el componente
-  created: function () {
+  /*created: function () {
     this.getData();
-  },
+  },*/
 };
 </script>
 

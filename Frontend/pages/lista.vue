@@ -7,7 +7,7 @@
         <!-- {{index}} -  -->
         ID: {{ libro.id }} - Titulo: {{ libro.titulo }}. Autor: {{ libro.autor }}.
         Editorial: {{ libro.editorial }}. Páginas: {{ libro.paginas }}. Precio:
-        {{ libro.Precio }}. Volumen: {{ libro.volumen }}
+        {{ libro.precio }}. Volumen: {{ libro.volumen }}
       </li>
     </ul>
     <div v-if="libros.length == 0" class="empty-list">

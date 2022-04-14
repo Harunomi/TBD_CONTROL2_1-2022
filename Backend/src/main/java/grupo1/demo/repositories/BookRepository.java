@@ -10,7 +10,9 @@ public interface BookRepository {
 
     public List<Book> getAllBooks();
 
-    //public String updateBook(Integer id, Book book);
+    public String updateBook(Book book);
 
     public boolean deleteBook(int id);
+
+
 }
